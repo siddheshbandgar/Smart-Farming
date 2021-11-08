@@ -15,6 +15,7 @@
 								<h4 class="text-wh mx-auto my-4"><strong> Here are some questions we'll answer</strong></h4>
 								<p class="text-li mx-auto mt-2">
 									1. What crop to plant here? <br>
+									1. What fertilizers can work well for your soil? <br>
 									2. Which disease do your crop have?<br>
 									3. How to cure the disease?</p>
 							</div>
@@ -65,6 +66,20 @@
 					</div>
 				</a>
 			</div>
+
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-5" display= "flex" justify-content= "center" align-items= "center">
+			
+				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('fertilizer_recommendation') }}">
+					<div class="blog-info">
+
+						<h4>Fertilizer</h4>
+
+						<p class="mt-2"> Recommendation about the type of fertilizers that would enhance the quality of soil</p>
+					</div>
+				</a>
+			</div>
+
 			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
 			
 				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="">
