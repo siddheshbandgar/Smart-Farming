@@ -213,8 +213,9 @@ def fert_recommend():
         data = np.array([[N, P, K, ph, soil_moisture]])
         my_prediction = fert_recommendation_model.predict(data)
         final_prediction = my_prediction[0]
-
-        response = Markup(str(fertilizer_dic[final_prediction]))
+        print(final_prediction)
+        response = Markup(str(fertilizer_dic[str(final_prediction)]))
+        print(response)
         
         return render_template('fertilizer-result.html', recommendation=response,title=title)
 
